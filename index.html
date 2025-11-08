@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishwer Singh - Personal Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Ishwer Singh</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Ishwer Singh</span></h1>
+                <p>I'm a Front-End Developer passionate about building
+                    <br>
+                    beautiful and functional web applications.
+                </p>
+                <a href="#projects" class="cta-button">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="img/Ishwer_singh.png" alt="Your Name">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm a developer based in [Your City]. I love creating things for the web, from simple landing pages to complex web apps.</p>
+                    <p>My skills include HTML, CSS, JavaScript, and frameworks like React (or any others you know). I'm always eager to learn new technologies and take on new challenges.</p>
+                    <p>When I'm not coding, you can find me [Your Hobby].</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="img/mamory_match.jpeg" alt="Project 1 Screenshot">
+                    <h3>Memory match Game</h3>
+                    <p>A Memory Match game uses HTML to build a grid of cards and CSS to style them with a flip animation. JavaScript runs all the game logic, handling user clicks, checking if two flipped cards are a match, and keeping score.</p>
+                    <div class="project-links">
+                        <a href="https://ishwer1920.github.io/memory-match/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Ishwer1920/memory-match" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/music_web.jpg" alt="Project 2 Screenshot">
+                    <h3>Music Player</h3>
+                    <p>A music player uses HTML to structure the audio element and controls like play, pause, and skip buttons, while CSS styles the entire interface. JavaScript controls the audio playback, manages the playlist, and makes the buttons and progress bar functional.</p>
+                    <div class="project-links">
+                        <a href="https://ishwer1920.github.io/music/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Ishwer1920/music" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="img/bingo.jpg" alt="Project 3 Screenshot">
+                    <h3>Bingo Game</h3>
+                    <p>A Bingo game uses HTML to build the 5x5 grid for the player's card and CSS to style the board and highlight marked numbers. JavaScript generates the random numbers on the card, "calls" new numbers one by one, and checks the player's card for a winning "BINGO" pattern.</p>
+                    <div class="project-links">
+                        <a href="https://ishwer1920.github.io/bingo/" target="_blank">Live Demo</a>
+                        <a href="https://github.com/Ishwer1920/bingo" target="_blank">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <p>Have a question or want to work together? Send me a message!</p>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
