@@ -1,26 +1,51 @@
-// Select the hamburger menu and the navigation menu
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const navLinks = document.querySelectorAll(".nav-link");
-
-// Add a click event listener to the hamburger icon
-hamburger.addEventListener("click", mobileMenu);
-
-// Add click event listeners to the nav links to close the menu
-navLinks.forEach(link => link.addEventListener("click", closeMenu));
-
-// Function to toggle the mobile menu
-function mobileMenu() {
-    // Toggles the 'active' class on the hamburger icon (for the X)
-    hamburger.classList.toggle("active");
+document.addEventListener("DOMContentLoaded", () => {
     
-    // Toggles the 'active' class on the nav menu (to show/hide it)
-    navMenu.classList.toggle("active");
-}
+    // --- Page Navigation Logic ---
+    const navLinks = document.querySelectorAll(".nav-link");
+    const pages = document.querySelectorAll(".page");
 
-// Function to close the mobile menu
-function closeMenu() {
-    // Removes the 'active' class so the menu hides
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-}
+    navLinks.forEach(link => {
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            
+            const pageId = link.getAttribute("data-page");
+
+            // 1. Update Active Page
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.add("active");
+                } else {
+                    page.classList.remove("active");
+                }
+            });
+
+            // 2. Update Active Nav Link
+            navLinks.forEach(nav => {
+                if (nav.getAttribute("data-page") === pageId) {
+                    nav.classList.add("active");
+                } else {
+                    nav.classList.remove("active");
+                }
+            });
+
+            // 3. Close hamburger menu on click
+            if (window.innerWidth <= 768) {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }
+
+            // 4. Scroll to top of new page
+            window.scrollTo(0, 0);
+        });
+    });
+
+    // --- Hamburger Menu Logic ---
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+
+});

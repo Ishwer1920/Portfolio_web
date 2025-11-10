@@ -3,101 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ishwer Singh - Personal Portfolio</title>
+    <title>Ishwer Singh - Software Developer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="#" class="nav-logo">Ishwer Singh</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo nav-link" data-page="home">
+                <strong>Ishwer Singh</strong> / SOFTWARE DEVELOPER
+            </a>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active" data-page="home">ABOUT ME</a></li>
+                    <li><a href="#" class="nav-link" data-page="resume">RESUME</a></li>
+                    <li><a href="#" class="nav-link" data-page="projects">PROJECTS</a></li>
+                    <li><a href="#" class="nav-link" data-page="contact">CONTACT</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Ishwer Singh</span></h1>
-                <p>I'm a Front-End Developer passionate about building
-                    <br>
-                    beautiful and functional web applications.
+    <main class="main-content">
+
+        <section class="page active" id="home">
+            <div class="home-container">
+                <div class="home-left-panel">
+                    <div class="profile-card card">
+                        <img src="img/Ishwer_singh.png" alt="Ishwer Singh" class="profile-pic">
+                        <h2>Ishwer Singh</h2>
+                        <p class="profile-title">SOFTWARE DEVELOPER</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/ishwer-singh" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/Ishwer1920" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-right-panel">
+                    <h1>Hello</h1>
+                    <h3>Here's who I am & what I do</h3>
+                    <div class="button-group">
+                        <a href="#" class="btn btn-primary nav-link" data-page="resume">RESUME</a>
+                        <a href="#" class="btn btn-secondary nav-link" data-page="projects">PROJECTS</a>
+                    </div>
+                    <p>I'm a detail-oriented and motivated Computer Science student (B.Tech 2022-2026) with a passion for software development. I specialize in building efficient, user-friendly, and scalable web applications using modern technologies.</p>
+                    <p>I thrive on solving complex problems and turning ideas into reality. This portfolio showcases my journey, from developing secure full-stack applications like <strong>SecureShare</strong> to creating native mobile apps like <strong>WebQuest</strong>. Feel free to explore my work.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="page" id="resume">
+            <div class="page-container resume-page">
+                <h2 class="page-title">Resume</h2>
+                <div class="resume-header">
+                    <div class="resume-quick-links">
+                        <a href="https://github.com/Ishwer1920" target="_blank" class="btn btn-secondary">GitHub</a>
+                        <a href="https://www.linkedin.com/in/ishwer-singh" target="_blank" class="btn btn-secondary">LinkedIn</a>
+                        <a href="mailto:ishwersingh1920@gmail.com" class="btn btn-secondary">Email</a>
+                    </div>
+                    <a href="Ishwer_Singh_Resume.pdf" class="btn btn-primary" download>DOWNLOAD CV</a>
+                </div>
+
+                <div class="resume-section card">
+                    <h3>Summary</h3>
+                    <p>Detail-oriented and motivated Computer Science student pursuing a B.Tech (2022–2026), with a solid foundation in programming and software development. Passionate about building efficient, user-friendly, and scalable web applications using modern technologies.</p>
+                </div>
+
+                <div class="resume-section card">
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <strong>Languages:</strong>
+                            <p>JavaScript (ES6+), TypeScript, Python, SQL, C++, CSS, Java, Shell Scripting (Bash).</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>FrontEnd Development:</strong>
+                            <p>React, Redux, Next.js, HTML, CSS, Responsive Design, Ionic</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>BackEnd Development:</strong>
+                            <p>Node.js, Express, Auth</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>Development & Testing Tools:</strong>
+                            <p>VS Code, Git, Postman, Figma, Canva, CapCut, Adobe Photoshop, Webpack</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>Concepts:</strong>
+                            <p>Distributed Systems, System Monitoring, Incident Management, Service Oriented Architecture, Microservices, Security Best Practices, Performance Optimization, Agile Methodologies</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>Databases:</strong>
+                            <p>MongoDB, Cockroach</p>
+                        </div>
+                        <div class="skill-category">
+                            <strong>Soft Skills:</strong>
+                            <p>Ownership, Communication, Team Collaboration, Problem Solving, Adaptability, Creativity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section card">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <strong>Bachelor of Technology in Computer Science & Engineering</strong>
+                            <span>Amritsar, India</span>
+                        </div>
+                        <div class="education-details">
+                            <span>Amritsar College of Engineering & Technology (GPA: 5.5/10)</span>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-header">
+                            <strong>Senior Secondary</strong>
+                            <span>Punjab, India</span>
+                        </div>
+                        <div class="education-details">
+                            <span>Khalsa college public School (percentage - 55%)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-section card">
+                    <h3>Projects</h3>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <h4>SecureShare | a Web Application</h4>
+                            <p class="project-tech-stack">Technology Stack: React, Redux, Python, Django, SQLite, Docker, Web Crypto API, JWT Authentication, AES-256 Encryption</p>
+                            <ul class="project-description">
+                                <li>Built a secure file-sharing platform with MFA, RBAC, and AES-256 encryption for temporary, shareable links.</li>
+                                <li>Implemented AES-256 encryption for file uploads, creating secure, shareable links with expiration features to provide controlled and temporary file access.</li>
+                                <li>Enforced industry best practices including HTTPS with TLS, bcrypt password hashing, JWT session management, and comprehensive input validation to safeguard against vulnerabilities.</li>
+                                <li>Delivered a clean, modular full-stack solution, ensuring rigorous encryption, seamless client-server communication, and Docker-ized deployment for scalability and ease of use in production environments.</li>
+                            </ul>
+                        </div>
+                        <div class="project-item">
+                            <h4>WebQuest | a Native Mobile App</h4>
+                            <p class="project-tech-stack">Technology Stack: React Native, Expo, MongoDB, AWS EC2, JWT Authentication, OpenAI, Google Vision API</p>
+                            <ul class="project-description">
+                                <li>Designed and developed responsive, user-friendly mobile interfaces using React Native and Expo, significantly enhancing client engagement and retention.</li>
+                                <li>Built and integrated progress tracking tools that allow gym trainers to monitor clients’ performance metrics, providing personalized feedback and enhanced user motivation and retention.</li>
+                                <li>Developed back-end services using MongoDB for efficient data storage and AWS EC2 for scalable cloud hosting, ensuring seamless operation and performance.</li>
+                                <li>Integrated advanced APIs, such as OpenAI for intelligent insights and Google Vision API for image recognition, delivering a feature-rich and seamless user experience.</li>
+                            </ul>
+                        </div>
+                        <div class="project-item">
+                            <h4>PawGuard | a Web Application</h4>
+                            <p class="project-tech-stack">Technology Stack: React, Express, MongoDB, Node.js, Microsoft IIS Server, TomTom API</p>
+                            <ul class="project-description">
+                                <li>Developed reusable, custom React components and optimized the user interface for improved responsiveness and accessibility, significantly enhancing user satisfaction.</li>
+                                <li>Engineered seamless integration between the React front-end and Node.js/Express back-end, ensuring efficient data flow and improving application reliability and performance.</li>
+                                <li>Designed and implemented a comprehensive database system using MongoDB, enabling efficient management of pet insurance data and streamlined data retrieval for pet owners.</li>
+                                <li>Integrated TomTom API for interactive maps, enhancing the clinic selection process by providing real-time location data and routing capabilities for pet owners.</li>
+                            </ul>
+                        </div>
+                        <div class="project-item">
+                            <h4>SortPark | a Progressive Web App</h4>
+                            <p class="project-tech-stack">Technology Stack: HTML, CSS, JavaScript, Firebase, Service Workers, Web Push Notifications, PWA Best Practices</p>
+                            <ul class="project-description">
+                                <li>Developed SmartPark, a Progressive Web App (PWA) for task and activity planning, improving user organization and goal tracking.</li>
+                                <li>Implemented task management features, including dynamic list creation, item addition, and real-time progress tracking.</li>
+                                <li>Used Firebase for seamless backend integration and real-time synchronization across devices.</li>
+                                <li>Enabled offline functionality through service workers, enabling users to access tasks without an internet connection.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page" id="projects">
+            <div class="page-container">
+                <h2 class="page-title">Projects</h2>
+                <p class="projects-intro">Here are a few of my projects. You can see more on my resume or GitHub profile.
                 </p>
-                <a href="#projects" class="cta-button">View My Work</a>
+                
+                <div class="card project-card">
+                    <div class="project-text">
+                        <h3>Memory match Game</h3>
+                        <span class="project-role">Full-Stack Web Application</span>
+                        <p>A Memory Match game uses HTML to build a grid of cards and CSS to style them with a flip animation. JavaScript runs all the game logic, handling user clicks, checking if two flipped cards are a match, and keeping score.</p>
+                        
+                        <div class="project-links">
+                            <a href="https://ishwer1920.github.io/memory-match/" target="_blank" class="btn btn-primary">TRY IT LIVE</a>
+                            <a href="https://github.com/Ishwer1920/memory-match" target="_blank" class="btn btn-secondary">VIEW CODE</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="img/mamory_match.jpeg" alt="Memory match Game">
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="project-text">
+                        <h3>Music Player</h3>
+                        <span class="project-role">Music Player</span>
+                        <p>A music player uses HTML to structure the audio element and controls like play, pause, and skip buttons, while CSS styles the entire interface. JavaScript controls the audio playback, manages the playlist, and makes the buttons and progress bar functional.</p>
+                        
+                        <div class="project-links">
+                            <a href="https://ishwer1920.github.io/music/" target="_blank" class="btn btn-primary">TRY IT LIVE</a>
+                            <a href="https://github.com/Ishwer1920/music" target="_blank" class="btn btn-secondary">VIEW CODE</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="img/music_web.jpg" alt="Music Player">
+                    </div>
+                </div>
+                 
+                 <div class="card project-card">
+                    <div class="project-text">
+                        <h3>PawGuard</h3>
+                        <span class="project-role">Full-Stack Web Application</span>
+                        <p>A Bingo game uses HTML to build the 5x5 grid for the player's card and CSS to style the board and highlight marked numbers. JavaScript generates the random numbers on the card, "calls" new numbers one by one, and checks the player's card for a winning "BINGO" pattern.</p>
+                        
+                        <div class="project-links">
+                            <a href="https://ishwer1920.github.io/bingo/" target="_blank" class="btn btn-primary">TRY IT LIVE</a>
+                            <a href="https://github.com/Ishwer1920/bingo" target="_blank" class="btn btn-secondary">VIEW CODE</a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <img src="img/bingo.jpg" alt="Bingo">
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="img/Ishwer_singh.png" alt="Your Name">
+        <section class="page" id="contact">
+            <div class="page-container">
+                <h2 class="page-title">Let's talk</h2>
+                <div class="card contact-form-card">
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name *</label>
+                                <input type="text" id="first-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name *</label>
+                                <input type="text" id="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="about-text">
-                    <p>Hello! I'm a developer based in [Your City]. I love creating things for the web, from simple landing pages to complex web apps.</p>
-                    <p>My skills include HTML, CSS, JavaScript, and frameworks like React (or any others you know). I'm always eager to learn new technologies and take on new challenges.</p>
-                    <p>When I'm not coding, you can find me [Your Hobby].</p>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="projects" class="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="img/mamory_match.jpeg" alt="Project 1 Screenshot">
-                    <h3>Memory match Game</h3>
-                    <p>A Memory Match game uses HTML to build a grid of cards and CSS to style them with a flip animation. JavaScript runs all the game logic, handling user clicks, checking if two flipped cards are a match, and keeping score.</p>
-                    <div class="project-links">
-                        <a href="https://ishwer1920.github.io/memory-match/" target="_blank">Live Demo</a>
-                        <a href="https://github.com/Ishwer1920/memory-match" target="_blank">View Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="img/music_web.jpg" alt="Project 2 Screenshot">
-                    <h3>Music Player</h3>
-                    <p>A music player uses HTML to structure the audio element and controls like play, pause, and skip buttons, while CSS styles the entire interface. JavaScript controls the audio playback, manages the playlist, and makes the buttons and progress bar functional.</p>
-                    <div class="project-links">
-                        <a href="https://ishwer1920.github.io/music/" target="_blank">Live Demo</a>
-                        <a href="https://github.com/Ishwer1920/music" target="_blank">View Code</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="img/bingo.jpg" alt="Project 3 Screenshot">
-                    <h3>Bingo Game</h3>
-                    <p>A Bingo game uses HTML to build the 5x5 grid for the player's card and CSS to style the board and highlight marked numbers. JavaScript generates the random numbers on the card, "calls" new numbers one by one, and checks the player's card for a winning "BINGO" pattern.</p>
-                    <div class="project-links">
-                        <a href="https://ishwer1920.github.io/bingo/" target="_blank">Live Demo</a>
-                        <a href="https://github.com/Ishwer1920/bingo" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2>Get In Touch</h2>
-            <p>Have a question or want to work together? Send me a message!</p>
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
-        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>© 2025 by Ishwer Singh.</p>
+            </div>
+            <div class="footer-contact-info">
+                <div class="footer-col">
+                    <strong>Write</strong>
+                    <p>ishwersingh1920@gmail.com</p>
+                </div>
+                <div class="footer-col">
+                    <strong>Follow</strong>
+                    <div class="footer-social-links">
+                        <a href="https://github.com/Ishwer1920" target="_blank">GitHub</a>
+                        <a href="https://www.linkedin.com/in/ishwer-singh" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
